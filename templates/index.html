@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes Cool - Coding School of Bhadrak</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 30px 20px;
+            background: rgba(0,0,0,0.3);
+            animation: fadeInDown 1s;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #ffeb3b;
+            text-shadow: 2px 2px 8px #000;
+            margin-bottom: 10px;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b;}
+            to { text-shadow: 0 0 30px #fff700, 0 0 40px #fff700;}
+        }
+        .tagline {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+        .courses-section {
+            max-width: 900px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            animation: fadeInUp 1.2s;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .course-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            padding: 30px 24px;
+            width: 260px;
+            min-height: 180px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .course-card:hover {
+            transform: translateY(-10px) scale(1.04) rotate(-1deg);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            background: rgba(255,255,255,0.15);
+        }
+        .course-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #ffeb3b;
+            letter-spacing: 1px;
+        }
+        .course-desc {
+            font-size: 1rem;
+            color: #fff;
+            opacity: 0.85;
+        }
+        .enroll-btn {
+            margin-top: 18px;
+            padding: 10px 28px;
+            background: linear-gradient(90deg, #ffeb3b 0%, #ff9800 100%);
+            color: #222;
+            border: none;
+            border-radius: 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .enroll-btn:hover {
+            background: linear-gradient(90deg, #ff9800 0%, #ffeb3b 100%);
+            color: #fff;
+        }
+        .wave {
+            position: absolute;
+            left: 0; right: 0; bottom: 0;
+            height: 80px;
+            background: url('https://svgshare.com/i/12vG.svg') repeat-x;
+            background-size: contain;
+            z-index: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 24px 0 12px 0;
+            font-size: 1rem;
+            color: #fff;
+            opacity: 0.7;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 900px) {
+            .courses-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background: #fffbe7; color: #222;">
+        <div class="logo" style="color: #1e3c72; text-shadow: none;">
+            <img src="../static/logo.png" alt="Codes Cool Logo" style="height:196px; vertical-align:middle; margin-right:12px;">
+        </div>
+        <div class="tagline" style="color: #222;">Coding School of Bhadrak</div>
+        <nav style="margin: 24px auto 0; display: flex; justify-content: center; align-items: center; gap: 32px; font-size: 1.1rem; font-weight: 600; letter-spacing: 1px; background: rgba(255,255,255,0.7); border-radius: 24px; box-shadow: 0 2px 12px rgba(30,60,114,0.08); padding: 12px 32px; position: relative; overflow: visible;">
+            <a href="#about" class="nav-link" style="color: #1e3c72; text-decoration: none; position: relative;">About Us</a>
+            <a href="#contact" class="nav-link" style="color: #1e3c72; text-decoration: none; position: relative;">Contact Us</a>
+                    </nav>
+        <p style="font-size:1.1rem; opacity:0.8; margin-top:10px; color:#333;">
+            From beginners to experts, unlock your coding potential with us!
+        </p>
+        
+    </header>
+    <section class="courses-section" id="courses">
+        <!-- Dynamic Course Cards will be injected here -->
+    </section>
+    <div class="wave"></div>
+    <footer>
+      
+        <div style="margin: 24px auto 0; max-width: 600px;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.3230633834933!2d86.4961145750012!3d21.059755286713784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1c09b83dd909d3%3A0xc641ed3eedf32d1f!2sCodes%20Cool%20%7C%20Best%20Python%2C%20Java%20Training%20Institute!5e0!3m2!1sen!2sin!4v1749649989730!5m2!1sen!2sin" 
+                width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+          &copy; 2024 Codes Cool. All rights reserved.
+    </footer>
+    <script>
+        const courses = [
+            {
+                title: "Core Java",
+                desc: "Master the fundamentals of Java programming, OOPs, and problem solving."
+            },
+            {
+                title: "Advanced Java",
+                desc: "Deep dive into JDBC, Servlets, JSP, frameworks, and enterprise Java."
+            },
+            {
+                title: "Python",
+                desc: "Learn Python from scratch to advanced, including data structures and automation."
+            },
+            {
+                title: "HTML / CSS / JS",
+                desc: "Build beautiful, interactive websites with HTML5, CSS3, and JavaScript."
+            },
+            {
+                title: "Kids Coding",
+                desc: "Fun and interactive coding classes for kids using Scratch, Blockly, and Python."
+            },
+            {
+                title: "Django / Flask",
+                desc: "Develop powerful web apps with Python's Django and Flask frameworks."
+            },
+            {
+                title: "Major/Minor Projects",
+                desc: "Guidance and mentoring for academic projects in various technologies."
+            }
+        ];
+
+        const coursesSection = document.getElementById('courses');
+        courses.forEach(course => {
+            const card = document.createElement('div');
+            card.className = 'course-card';
+            card.innerHTML = `
+                <div class="course-title">${course.title}</div>
+                <div class="course-desc">${course.desc}</div>
+                <button class="enroll-btn">Enroll Now</button>
+            `;
+            const btn = card.querySelector('.enroll-btn');
+            btn.addEventListener('click', function() {
+                const message = encodeURIComponent(`I am interested in ${course.title}, Please give the details.`);
+                const whatsappUrl = `https://wa.me/917873994229?text=${message}`;
+                if (confirm("Open WhatsApp to send your enquiry?")) {
+                    window.open(whatsappUrl, '_blank');
+                }
+            });
+            coursesSection.appendChild(card);
+        });
+    </script>
+</body>
+</html>
