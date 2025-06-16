@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Codes Cool</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 30px 20px;
+            background: rgba(0,0,0,0.3);
+            animation: fadeInDown 1s;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #ffeb3b;
+            text-shadow: 2px 2px 8px #000;
+            margin-bottom: 10px;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b;}
+            to { text-shadow: 0 0 30px #fff700, 0 0 40px #fff700;}
+        }
+        .tagline {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+        nav {
+            margin: 24px auto 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 24px;
+            box-shadow: 0 2px 12px rgba(30,60,114,0.08);
+            padding: 12px 32px;
+            position: relative;
+            overflow: visible;
+        }
+        nav a {
+            color: #1e3c72;
+            text-decoration: none;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        nav a svg {
+            margin-right: 6px;
+        }
+        .about-container {
+            max-width: 700px;
+            margin: 40px auto 0 auto;
+            background: rgba(255,255,255,0.08);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            padding: 32px 24px 24px 24px;
+            text-align: left;
+        }
+        h1 {
+            color: #ffeb3b;
+            margin-bottom: 18px;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .about-content {
+            font-size: 1.15rem;
+            color: #fffbe7;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+        .about-section-title {
+            color: #ffeb3b;
+            font-size: 1.15rem;
+            font-weight: bold;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+        .about-list, .about-programs, .about-why {
+            margin: 12px 0 0 0;
+            padding-left: 18px;
+            color: #fff;
+        }
+        .about-list li, .about-programs li, .about-why li {
+            margin-bottom: 10px;
+        }
+        .about-check {
+            color: #ffeb3b;
+            margin-right: 6px;
+            font-weight: bold;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 18px;
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .about-container {
+                margin: 24px auto 0 auto;
+                padding: 20px 8px 16px 8px;
+                width: 100%;
+                max-width: 700px;
+                box-sizing: border-box;
+            }
+            /* nav {
+                flex-direction: column !important;
+                gap: 12px !important;
+                align-items: center !important;
+                padding: 12px 8px !important;
+            }
+            nav a {
+                justify-content: center !important;
+                width: 100%;
+                text-align: center;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <header style="background: #fffbe7; color: #222;">
+        <div class="logo" style="color: #1e3c72; text-shadow: none;">
+            <img src="../static/logo.png" alt="Codes Cool Logo" style="height:196px; vertical-align:middle; margin-right:12px;">
+        </div>
+        <div class="tagline" style="color: #222;">Coding School of Bhadrak</div>
+        <nav style="margin: 24px auto 0; display: flex; justify-content: center; align-items: center; gap: 32px; font-size: 1.1rem; font-weight: 600; letter-spacing: 1px; background: rgba(255,255,255,0.7); border-radius: 24px; box-shadow: 0 2px 12px rgba(30,60,114,0.08); padding: 12px 32px; position: relative; overflow: visible;">
+            <a href="/" class="nav-link" style="color: #1e3c72; text-decoration: none; position: relative;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:middle;margin-right:6px;" fill="#1e3c72" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 2 7.5V14a1 1 0 0 0 1 1h3.5a.5.5 0 0 0 .5-.5V11h2v3.5a.5.5 0 0 0 .5.5H13a1 1 0 0 0 1-1V7.5a.5.5 0 0 0-.146-.354l-6-6z"/>
+                </svg>
+            </a>
+            <a href="/about" class="nav-link" style="color: #1e3c72; text-decoration: none; position: relative;">About Us</a>
+            <a href="/contact" class="nav-link" style="color: #1e3c72; text-decoration: none; position: relative;">Contact Us</a>
+        </nav>
+        <p style="font-size:1.1rem; opacity:0.8; margin-top:10px; color:#333;">
+            From beginners to experts, unlock your coding potential with us!
+        </p>
+    </header>
+    <div class="about-container">
+        <h1>About Us</h1>
+        <div class="about-content" style="font-size:1.25rem; color:#fff;">
+            <strong>Welcome to Codes Cool — Where Future Coders are Made!</strong>
+        </div>
+        <div class="about-content">
+            At Codes Cool, we believe that learning to code is not just about writing lines of code — it’s about unlocking creativity, solving real-world problems, and shaping the future. Founded with a mission to make quality coding education accessible and enjoyable for everyone, Codes Cool has quickly become a trusted name for aspiring developers, tech enthusiasts, and professionals alike.
+        </div>
+        <div class="about-section-title">Who We Are</div>
+        <div class="about-content">
+            We are a passionate team of educators, industry experts, and tech mentors dedicated to nurturing the next generation of programmers. Our institute provides a friendly and engaging environment where students can learn at their own pace, develop practical skills, and build confidence through hands-on experience.
+        </div>
+        <div class="about-section-title">What We Offer</div>
+        <div class="about-content">
+            At Codes Cool, we offer a wide range of courses covering everything from foundational programming languages to cutting-edge frameworks and technologies. Whether you are a complete beginner, a student looking to boost your career prospects, or a working professional seeking to upgrade your skills, we have a course tailored just for you.
+        </div>
+        <ul class="about-programs">
+            <li>Python Programming</li>
+            <li>Web Development (HTML, CSS, JavaScript, Bootstrap)</li>
+            <li>Full-Stack Development</li>
+            <li>Core Java and Advanced Java</li>
+            <li>Frameworks like Spring Boot, Flask and DJango</li>
+            <li>Special workshops on emerging technologies and industry trends</li>
+        </ul>
+        <div class="about-section-title">Our Approach</div>
+        <ul class="about-list">
+            <li><span class="about-check">&#x2705;</span>Practical Learning — Project-based assignments and real-life case studies.</li>
+            <li><span class="about-check">&#x2705;</span>Personalized Mentorship — Small batches with individual attention.</li>
+            <li><span class="about-check">&#x2705;</span>Industry Relevance — Curriculum designed in line with current market needs.</li>
+            <li><span class="about-check">&#x2705;</span>Flexible Learning — Both offline and online classes to suit your schedule.</li>
+        </ul>
+        <div class="about-section-title">Why Choose Us</div>
+        <ul class="about-why">
+            <li>✨ Experienced and supportive faculty</li>
+            <li>✨ Affordable course fees</li>
+            <li>✨ Certification upon successful completion</li>
+            <li>✨ Job-oriented training and placement support</li>
+            <li>✨ A vibrant community of learners and alumni</li>
+        </ul>
+        <div class="about-content">
+            Whether you dream of becoming a developer, want to build your own projects, or simply wish to understand the technology shaping our world, <strong>Codes Cool</strong> is the right place to start your journey.
+        </div>
+        <div class="about-content" style="font-size:1.15rem; color:#ffeb3b; text-align:center;">
+            Let’s Code the Cool Way — Together!
+        </div>
+        <a href="/" class="back-link">&larr; Back to Home</a>
+    </div>
+</body>
+</html>
